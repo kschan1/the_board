@@ -6,18 +6,18 @@ for (var row = 0; row < gridSize; row++) {
   for (var column = 0; column < gridSize; column++) {
     if (row % 2 === 0) {
       if (column % 2 !== 0){
-        board = board.concat(symbol);
+        board += symbol;
       } else {
-        board = board.concat(' ');
+        board += ' ';
       }
     } else {
       if (column % 2 !== 0) {
-        board = board.concat(' ');
+        board += ' ';
       } else {
-        board = board.concat(symbol);
+        board += symbol;
       }
     }
   }
-  board = board.concat('\n');
+  board += '\n';
 }
 console.log(board);
